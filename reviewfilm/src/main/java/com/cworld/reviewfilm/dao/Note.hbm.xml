@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.cworld.reviewfilm.model">
+     <class name="Film" table="film">
+        <id name="id" column="id">
+        </id>
+        <property name="name" column="name" />
+        <property name="coverurl" column="coverurl" />
+        <property name="active" column="active" />
+    </class> 
+     <class name="Comment" table="comment">
+        <id name="id" column="id">
+        </id>
+        <property name="user" column="user" />
+        <property name="email" column="email" />
+        <property name="content" column="content" />
+        <property name="filmid" column="filmid" />
+         <property name="active" column="active" />
+        
+    </class> 
+</hibernate-mapping>
